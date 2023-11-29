@@ -2,11 +2,10 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from requests import get
 
-# URL do site raspado.
-url = input("Digite o link do site a ser raspado: ")
+# URL do site a ser raspado
+url = "https://p1.trrsf.com/api/musa-soccer/ms-standings-light?idChampionship=1398&idPhase=&language=pt-BR&country=BR&nav=N&timezone=BR"
 
 # Leitura do HTML da página.
-response = get(url, headers={'Authorization': 'Bearer test_440825c49ff39c2785b97fc67b0609'})
 html = response.text
 
 # Objeto para analisar o HTML.
